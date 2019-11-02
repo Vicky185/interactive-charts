@@ -33,7 +33,7 @@
 
     <script>
         queue()
-            .defer(d3.json, "data/transactions.json")
+            .defer(d3.json, "../data/transactions.json")
             .await(makeGraphs);
 
         function makeGraphs(error, transactionsData) {
